@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'custom_user',
     'registration',
+    'events',
 ]
 
 MIDDLEWARE = [
@@ -100,6 +101,17 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+
+'''
+Email settings
+'''
+EMAIL_HOST = 'smtp.gmail.com'
+DEFAULT_FROM_EMAIL = 'ankit@bmsit.in'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'ankit@bmsit.in'
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = True
 
 
 # Internationalization
